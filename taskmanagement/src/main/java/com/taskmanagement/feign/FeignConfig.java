@@ -1,0 +1,20 @@
+package com.taskmanagement.feign;
+
+import feign.RequestInterceptor;
+import feign.RequestTemplate;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class FeignConfig {
+
+    @Bean
+    public RequestInterceptor requestInterceptor() {
+        return new RequestInterceptor() {
+            @Override
+            public void apply(RequestTemplate template) {
+                template.header("Authorization", "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ3MU9RaGNzSUJmV0JSTHMwWEpBa0NpMFZzRTBCRlJWSFNNdEdHUUZjc2NnIn0.eyJleHAiOjE3MjEzOTk1MzIsImlhdCI6MTcyMTM5OTIzMiwianRpIjoiY2ZmZmQ0MmItYmY3Yy00YmMyLTlmYzUtZDkwZTRjNGU5ODAxIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgxL3JlYWxtcy90YXNrcyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI3M2U2NTM0NS05MmFmLTQwYzMtODU2My03MmIwMjE0ZDBlYWYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJpY2hyYWsiLCJzZXNzaW9uX3N0YXRlIjoiYWY4NjgyM2ItYjA0Ny00ZDhhLWFiMGUtYzM4Zjk1MzYwYzY1IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy10YXNrcyJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6ImFmODY4MjNiLWIwNDctNGQ4YS1hYjBlLWMzOGY5NTM2MGM2NSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiaWNocmFrIGZyaWppIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiaWNocmFrIiwiZ2l2ZW5fbmFtZSI6ImljaHJhayIsImZhbWlseV9uYW1lIjoiZnJpamkifQ.DhujUlXtQDjvAhgBtzLRXz5t5TuANz2mHMwRpJ1YIcgjrdgpukpJORZX7FfxfyAmp_dyre147_1yGKX2WErlVxADYocc3_lY9NCt7fNyzDJFhiDvbnqC8D2fPVO9RhOewJUU9Vchexet4K5EByqsBSki5ud0tYiH5WRrmb-onoTiP5svhCqltAmIb_GsS-fFu1IpdpaJRuZc-AtQR2YwijDwVNIthrpYBWO159WHmIinr-uzuzVXQnlgNb8W0wRuMdbcLL51UGC6ZK7AW0Irv4YvGSH5bRYeDWi8rsfPyvtdEAPmnRIbq8LWYHXHjyIK7KJBQpW7kzNrvzySVLQpMg");
+            }
+        };
+    }
+}
