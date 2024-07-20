@@ -1,0 +1,9 @@
+
+˜	java:S117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şäàİúÿÿÿÿ8š§„ûŒ2J$760cc751-0a8d-4e4e-8840-0ca00cab9497
+˜	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ‡øşÿÿÿÿ8›§„ûŒ2J$94849179-9573-48fd-bbd0-a4c9fbea52f1
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8§„ûŒ2J$9299dd1e-ef1b-43f6-a685-81acddf252fa
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8§„ûŒ2J$6a8ee3a6-4baa-49f8-99cd-cdf08e916551
+½
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8Ó¶ÓûŒ2J$4d19d249-9a37-4c8c-8e0f-001c18b80f2d
